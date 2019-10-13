@@ -1,0 +1,17 @@
+ISSUE4 NATAS OVERTHEWIRE.org
+
+goto :: http://natas3.natas.labs.overthewire.org
+
+when they said google even cant find it.. this means that there must be a robots.txt to
+mitigate the bot presence on the website.
+
+when robots.txt is invoked we got a exclution directory which when traversed gave users
+.txt which cantains the password.
+
+do :: http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+
+and here we go there is our pass.
+
+natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+
+password --> Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ

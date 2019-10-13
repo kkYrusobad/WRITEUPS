@@ -1,0 +1,12 @@
+ISSUE2 NATAS OVERTHEWIRE.org
+
+goto :: http://natas1.natas.labs.overthewire.org
+
+here the right click is disabled, lets use the keyboard shortcut to find the page source
+click function12 i.e: f12 and on the right pane of the window we can see the page source
+
+again under comment tages :: 
+
+<!--The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi -->
+
+password --> ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi

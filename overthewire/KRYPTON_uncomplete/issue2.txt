@@ -1,0 +1,12 @@
+KRYPTON OVERTHEWIRE.org 
+
+current login :: krypton2
+
+given :: caeser cipher 
+
+simply use online decryptor or head to my github for shell cript to solve caeser cipher.
+
+https://github.com/kkYrusobad/KRYPTON-OTW.org/blob/master/ceasercipher.sh
+
+username --> krypton3
+passowrd --> CAESARISEASY

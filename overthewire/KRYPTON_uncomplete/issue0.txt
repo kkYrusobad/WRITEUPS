@@ -1,0 +1,15 @@
+ISSUE0 KRYPTON OVERTHEWIRE.org 
+
+krypton lab overthewire.org solutions..... 
+
+we have a string which is base64 encoded and we have to decode it and then pass it in 
+ssh.
+
+echo <string> | base64 -d
+KRYPTONISGREAT 
+
+now simply make a connection with the server.
+ssh krypton1@krypton.labs.overthewire.org -2222
+
+username --> krypton1
+password --> KRYPTONISGREAT

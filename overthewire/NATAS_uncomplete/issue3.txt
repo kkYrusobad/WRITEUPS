@@ -1,0 +1,23 @@
+ISSUE3 NATAS OVERTHEWIRE.org 
+
+goto :: http://natas2.natas.labs.overthewire.org
+
+when we see the source code for natas2 we can see that there is a image file in /files/ 
+directory and also image file is of no use to us as its 1X1 pixel in length, so lets see
+the /files directory...
+
+http://natas2.natas.labs.overthewire.org/files
+
+under this there is a file named users.txt lets see that..
+
+# username:password
+alice:BYNdCesZqW
+bob:jw2ueICLvT
+charlie:G5vCxkVV3m
+natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+eve:zo4mJWyNj2
+mallory:9urtcpzBmH
+
+hence we got the pass.. 
+
+password --> sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14

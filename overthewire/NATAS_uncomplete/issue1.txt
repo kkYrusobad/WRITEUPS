@@ -1,0 +1,10 @@
+ISSUE1 NATAS OVERTHEWIRE.org
+
+open ::  http://natas0.natas.labs.overthewire.org
+
+simply view the page source by clicking the right click and click view page source.
+there in the comment tags we can see the password.
+
+<!--The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto -->
+
+passord --> gtVrDuiDfck831PqWsLEZy5gyDz1clto

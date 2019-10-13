@@ -1,0 +1,10 @@
+ISSUE0 NATAS OVERTHEWIRE.org
+
+previously i used to write the minimal solutions of the challenges.. but that not quite 
+worked out for me so am writing full length solutions to the natas challenges.
+
+please do it yourself and if u dont srsly no one cares.... it would only harm u if u 
+didnt do it right.
+
+username --> natas0
+password --> natas1

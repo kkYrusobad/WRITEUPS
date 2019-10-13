@@ -1,0 +1,16 @@
+KRYPTON OVERTHEWIRE.org
+
+current login :: krypton1 
+
+given :: rot13 rotated string, rot13 is rotation of wach digit from the ascii values rotated by a degree of 13
+places.
+
+the string is currently in file krypton2 and is a ASCII text file so, using terminal and rotating the stirng..
+
+$ cat krypton2 | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+LEVEL TWO PASSWORD ROTTEN
+
+
+
+username --> krypton2
+password --> ROTTEN 
