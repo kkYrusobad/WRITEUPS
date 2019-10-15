@@ -2,6 +2,7 @@
 
 
 ## Download STUFF
+git download (clone)
 ```bash
 $ git clone https://github.com/kkYrusobad/WRITEUPS.git
 ```
