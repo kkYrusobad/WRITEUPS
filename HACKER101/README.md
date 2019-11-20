@@ -3,10 +3,10 @@ being trivial flag must be in the source, so using `curl`
 - `$ curl <url-instance>`
 
 gives the source :
-```
+```html
 <!doctype html>
 <html>
-	<head>
+    <head>
 		<style>
 			body {
 				background-image: url("background.png");
@@ -33,7 +33,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
 - **FLAG 1**
     editing and traversing pages in order fetches 'NOT FOUND',
     - `$ curl <url-instance>/page/<page-number>`
-        ```
+        ```html
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
         <title>404 Not Found</title>
         <h1>Not Found</h1>
@@ -41,7 +41,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     BUT, on one of the pages fetches 'FORBIDDEN',
     - `$ curl <url-instance>/page/<page-number>`
-        ```
+        ```html
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
         <title>403 Forbidden</title>
         <h1>Forbidden</h1>
@@ -49,7 +49,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     hence, we cant really see what there is on this page so as a work around we'll change url in order to edit the page,
     - `url <url-instance>/page/edit/<page-number-forbidden`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -79,7 +79,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
     Micro-CMS is vulnerable to XSS so after trying for a while xss does comes out ahead for remaining flags.
     the way this page is created it mitigates xss injection on `<textarea>` and actively changes `<script></script>` to `<scrubbed></scrubbed>`
     - `$ curl <url-instance>/page/edit/1`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -99,7 +99,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     XSS in `<textarea>` changes to 
     - `$ curl <url-instance>/page/1`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -115,7 +115,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     furthermore, if we use same XSS on `Title : <input..>` it works( requires to navigate to base url after saving)!
     - `$ curl <url-instance>/page/edit/1`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -135,7 +135,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     payload in form's `<input value="..">`
     - `$ curl <url-instance>/page/1`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -151,7 +151,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     to finally obtain the flag navigate back to base url to Micro-CMS url, giving flag as an alert
     - `$ curl <url-instance>`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -172,7 +172,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
     XSS can be injected to buttons, under edit pages insert payload
     `<button onclick=alert("xss")>call</button>`
     - `$ curl <url-instance>/page/edit/10`
-        ``` 
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -192,7 +192,7 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         ```
     button xss onclick function calls alert!
     - `$ curl <url-instance>/page/10`
-        ```
+        ```html
         <!doctype html>
         <html>
 	        <head>
@@ -208,3 +208,12 @@ edit page urls :: `<url-instance>/page/edit/<page-number>`
         <!--flag under placeholder <flag>-->
         ```
 * * *
+        
+    
+
+
+    
+
+
+
+
